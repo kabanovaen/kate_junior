@@ -1,0 +1,6 @@
+Tests.class
+restAssured\ApiData\PostDto.class
+testngtests\data\SumDataProvider.class
+restAssured\ApiTests.class
+restAssured\DtoTests.class
+testngtests\data\DateDateProvider.class
