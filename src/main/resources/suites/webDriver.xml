@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebDriver Тесты" verbose="1">
+    <test name="TestsSeleniumWebDriver">
+       <classes>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverFlightsTests"/>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverHerokuappDropDownTests"/>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverHerokuappHoversTests"/>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverHerokuappJavascript_alertsTests"/>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverHerokuappUploadTests"/>
+            <class name="seleniumWebDriverTests.SeleniumWebDriverHerokuappWindowsTests"/>
+        </classes>
+    </test>
+</suite>

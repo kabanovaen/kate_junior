@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Не генерируется id",
+    "matchedStatuses": ["broken", "failed"],
+    "messageRegex": ".*параметр id == null expected [true] but found [false].*"
+  },
+  {
+    "name": "Product defects",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": ["broken"]
+  }
+]
