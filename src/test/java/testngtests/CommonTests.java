@@ -1,3 +1,5 @@
+package testngtests;
+
 import org.testng.Assert;
 import testngtests.data.DateDateProvider;
 import testngtests.data.SumDataProvider;
@@ -9,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 import static math.Sum.sum;
 import static org.testng.Assert.*;
 
-public class Tests {
+public class CommonTests {
   @Test(dataProvider = "dp", dataProviderClass = SumDataProvider.class, groups = {"sum", "all"}, dependsOnGroups = "date", enabled = false)
   public void sumTest(int a, int b, int s) {
     int res = sum(a, b);

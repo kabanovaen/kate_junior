@@ -23,15 +23,11 @@ public class DateDateProvider {
     return new Object[][]{{now.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
             {now.minusDays(1).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
             {now.minusDays(2).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
-            {now.minusDays(3).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
-            {"32-10-2018"}}; //Для проверки Exception, что обрабатывается корректно неверно введенная дата
+            {now.minusDays(3).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))}};
   }
 
   @DataProvider(name = "dpDateStringN", parallel = true)
   public static Object[][] testDataDateStringN() {
-    return new Object[][]{{now.plusDays(1).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
-            {now.minusDays(4).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))},
-            {"01-01-2018"},
-            {"31-13-2018"}}; //Для проверки Exception, что обрабатывается корректно неверно введенная дата
+    return new Object[][]{{now.plusDays(1).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))}, {now.minusDays(4).format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))}, {"01-01-2018"}};
   }
 }
